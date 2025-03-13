@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background-color: #dcdcdc;
+        }
+        .calculator {
+            background: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            text-align: center;
+        }
+        input {
+            width: 80%;
+            padding: 8px;
+            margin: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <h3>Number 1 :</h3>
+    <input type="number" id="num1">
+    
+    <h3>Number 2 :</h3>
+    <input type="number" id="num2">
+    
+    <div>
+        <button onclick="calculate('sum')">Sum</button>
+        <button onclick="calculate('sub')">Sub</button>
+        <button onclick="calculate('mul')">Mul</button>
+        <button onclick="calculate('div')">Div</button>
+    </div>
+
+    <div id="result">Result is: </div>
+</div>
+
+<script>
+    function calculate(operation) {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        let result;
+
+        if (isNaN(num1) || isNaN(num2)) {
+            result = "Please enter valid numbers!";
+        } else {
+            switch (operation) {
+                case 'sum':
+                    result = num1 + num2;
+                    break;
+                case 'sub':
+                    result = num1 - num2;
+                    break;
+                case 'mul':
+                    result = num1 * num2;
+                    break;
+                case 'div':
+                    result = num2 !== 0 ? (num1 / num2).toFixed(2) : "Cannot divide by zero!";
+                    break;
+            }
+        }
+
+        document.getElementById("result").innerText = "Result is: " + result;
+    }
+</script>
+</body>
+</html>

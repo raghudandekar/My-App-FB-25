@@ -1,0 +1,35 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+}
+.left{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(3, 3, 87);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    text-align: center;
+    
+}
+
+.right{
+    width: 80%;
+    height: 100%;
+    background-color: gainsboro;
+    background-image: url("https://images.stockcake.com/public/a/0/4/a046571e-bf63-4b5d-ba26-88bda2960d2e_large/library-study-setup-stockcake.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+button{
+    width: 150px;
+    color: white;
+    background-color: red;
+    padding: 15px;
+    border-radius: 10px;
+    border: 20px;
+    text-align: center;
+}

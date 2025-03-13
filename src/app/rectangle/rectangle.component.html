@@ -1,0 +1,91 @@
+<p>rectangle works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #dcdcdc;
+            height: 80vh;
+            width: 30vw;
+        }
+        .calculator {
+            background: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            text-align: center;
+        }
+        input {
+            width: 80%;
+            padding: 8px;
+            margin: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+        button {
+            width: 90%;
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <h3>Length :</h3>
+    <input type="number" id="length">
+
+    <h3>Breadth :</h3>
+    <input type="number" id="breadth">
+
+    <div>
+        <button onclick="calculate('area')">Area</button>
+        <button onclick="calculate('perimeter')">Perimeter</button>
+    </div>
+
+    <div id="result">Result is: </div>
+</div>
+
+<script>
+    function calculate(operation) {
+        let length = parseFloat(document.getElementById("length").value);
+        let breadth = parseFloat(document.getElementById("breadth").value);
+        let result;
+
+        if (isNaN(length) || isNaN(breadth)) {
+            result = "Please enter valid numbers!";
+        } else {
+            if (operation === 'area') {
+                result = length * breadth;
+            } else if (operation === 'perimeter') {
+                result = 2 * (length + breadth);
+            }
+        }
+
+        document.getElementById("result").innerText = "Result is: " + result;
+    }
+</script>
+
+</body>
+</html>
+

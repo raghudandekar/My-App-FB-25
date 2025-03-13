@@ -3,10 +3,32 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { Error404Component } from './error404/error404.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { ProfileComponent } from './profile/profile.component';
+import { CalcultorComponent } from './calcultor/calcultor.component';
+import { RectangleComponent } from './rectangle/rectangle.component';
+import { CircleComponent } from './circle/circle.component';
+import { BMIComponent } from './bmi/bmi.component';
+import { HomeComponent } from './home/home.component';
+import { DatabindingComponent } from './databinding/databinding.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    DashboardComponent,
+    Error404Component,
+    WelcomeComponent,
+    ProfileComponent,
+    CalcultorComponent,
+    RectangleComponent,
+    CircleComponent,
+    BMIComponent,
+    HomeComponent,
+    DatabindingComponent
   ],
   imports: [
     BrowserModule,
