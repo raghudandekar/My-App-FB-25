@@ -11,6 +11,7 @@ import { CircleComponent } from './circle/circle.component';
 import { HomeComponent } from './home/home.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,children:[
@@ -18,10 +19,13 @@ const routes: Routes = [
     {path:'welcome',component:WelcomeComponent},
     {path:'calcultor',component:CalcultorComponent},
     {path:'databinding',component:DatabindingComponent},
+    {path:'directives',component:DirectivesComponent},
     {path:'rectangle',component:RectangleComponent},
     // {path:'profile',component:ProfileComponent},
     {path:'circle',component:CircleComponent},
     {path:'bmi',component:BMIComponent},
+        {path:'bmi',component:BMIComponent},
+
     
   ]}, 
      

@@ -14,6 +14,7 @@ import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { HomeComponent } from './home/home.component';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DatabindingComponent } from './databinding/databinding.component';
     CircleComponent,
     BMIComponent,
     HomeComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
