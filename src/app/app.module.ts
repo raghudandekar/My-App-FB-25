@@ -15,6 +15,14 @@ import { BMIComponent } from './bmi/bmi.component';
 import { HomeComponent } from './home/home.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { FormsModule } from '@angular/forms';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { HttpClientModule } from "@angular/common/http";
+import { AccountsComponent } from './accounts/accounts.component';
+import { PinterestComponent } from './pinterest/pinterest.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { MailComponent } from './mail/mail.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +38,19 @@ import { DirectivesComponent } from './directives/directives.component';
     BMIComponent,
     HomeComponent,
     DatabindingComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    EmployeeComponent,
+    VehicleComponent,
+    AccountsComponent,
+    PinterestComponent,
+    FlipkartComponent,
+    MailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

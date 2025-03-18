@@ -1,0 +1,13 @@
+<p>mail works!</p>
+<div class="mail-list">
+    <div *ngFor="let mail of mails" class="mail-item">
+      <div class="mail-content">
+        <h3>{{ mail.sender }}</h3>
+        <p>{{ mail.subject }}</p>
+        <span class="mail-date">{{ mail.date }}</span>
+      </div>
+      <button (click)="mail">
+        {{ mail.starred ? '⭐' : '☆' }}
+      </button>
+    </div>
+  </div>

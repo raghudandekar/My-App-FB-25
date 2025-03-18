@@ -12,6 +12,13 @@ import { HomeComponent } from './home/home.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { AccountService } from './account.service';
+import { AccountsComponent } from './accounts/accounts.component';
+import { PinterestComponent } from './pinterest/pinterest.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { MailComponent } from './mail/mail.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,children:[
@@ -20,11 +27,18 @@ const routes: Routes = [
     {path:'calcultor',component:CalcultorComponent},
     {path:'databinding',component:DatabindingComponent},
     {path:'directives',component:DirectivesComponent},
+    {path:'employee',component:EmployeeComponent},
     {path:'rectangle',component:RectangleComponent},
     // {path:'profile',component:ProfileComponent},
     {path:'circle',component:CircleComponent},
     {path:'bmi',component:BMIComponent},
         {path:'bmi',component:BMIComponent},
+        {path:'vehicle',component:VehicleComponent},
+        {path:'accounts',component:AccountsComponent},
+        {path:'pinterest',component:PinterestComponent},
+        {path:'flipkart',component:FlipkartComponent},
+        {path:'mail',component:MailComponent},
+
 
     
   ]}, 

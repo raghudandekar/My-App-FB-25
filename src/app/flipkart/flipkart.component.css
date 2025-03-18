@@ -1,0 +1,27 @@
+.product-catalog {
+    padding: 20px;
+    
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+
+  }
+  .product-card img {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .prouduct-info {
+    margin-top: 10px;
+  }
