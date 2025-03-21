@@ -1,2 +1,14 @@
-<p>pinterest works!</p>
+<h2>Pinterest</h2>
+<div class="parent" *ngFor=" let pinterest of pinterestdata">
+    <img [src]="pinterest.download_url" [alt]="" width="100px" height="100px">
+    <div class="overlay">
+        <p>Author:{{pinterest.author}}</p>
+        <a href="pinterest.download_url" download class="btn btn-primary">Download</a>
+    </div>
+
+    </div>
+    
+
+
+
     

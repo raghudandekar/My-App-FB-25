@@ -19,6 +19,9 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { PinterestComponent } from './pinterest/pinterest.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { MailComponent } from './mail/mail.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { StudentidcardComponent } from './studentidcard/studentidcard.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,children:[
@@ -38,6 +41,11 @@ const routes: Routes = [
         {path:'pinterest',component:PinterestComponent},
         {path:'flipkart',component:FlipkartComponent},
         {path:'mail',component:MailComponent},
+        {path:'create-vehicle',component:CreateVehicleComponent},
+        {path:'create-account',component:CreateAccountComponent},
+        {path:'studentidcard',component:StudentidcardComponent},
+
+
 
 
     

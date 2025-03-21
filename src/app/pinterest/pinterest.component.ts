@@ -10,6 +10,17 @@ import { PinterestService } from '../pinterest.service';
   styleUrls: ['./pinterest.component.css']
 })
 export class PinterestComponent {
+  pinterestdata:any=[];
+  constructor(private _pinterest:PinterestService){
+    this._pinterest.getpinterest().subscribe((data:any)=>{
+      console.log(data);
+      this.pinterestdata=data;
+    },(error:any)=>{
+      alert("Internal Server Error!");
+    }
+  )
+  }
+  
  
   
 
