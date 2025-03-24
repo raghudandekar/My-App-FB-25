@@ -27,6 +27,8 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { StudentidcardComponent } from './studentidcard/studentidcard.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { VehicleDetailsclearComponent } from './vehicle-detailsclear/vehicle-detailsclear.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
     CreateVehicleComponent,
     CreateAccountComponent,
     CreateUserComponent,
+    VehicleDetailsComponent,
+    VehicleDetailsclearComponent,
   ],
   imports: [
     BrowserModule,
