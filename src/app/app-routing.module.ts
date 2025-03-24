@@ -22,6 +22,7 @@ import { MailComponent } from './mail/mail.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { StudentidcardComponent } from './studentidcard/studentidcard.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,children:[
@@ -44,6 +45,8 @@ const routes: Routes = [
         {path:'create-vehicle',component:CreateVehicleComponent},
         {path:'create-account',component:CreateAccountComponent},
         {path:'studentidcard',component:StudentidcardComponent},
+        {path:'create-user',component:CreateUserComponent},
+
 
 
 

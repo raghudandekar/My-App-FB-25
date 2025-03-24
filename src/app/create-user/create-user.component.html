@@ -1,0 +1,52 @@
+<form [formGroup]="userForm">
+    <label>Name:</label>
+    <input type="text" formControlName="name"><br>
+    <label>Email:</label>
+    <input type="email" formControlName="email"><br>
+    <label>Password:</label>
+    <input type="password" formControlName="password"><br>
+    <label>Mobile:</label>
+    <input type="number" formControlName="mobile"><br>
+
+    <div formGroupName="address">
+     <label>City:</label>
+    <input type="text" formControlName="city"><br>
+    <label>State:</label>
+    <input type="text" formControlName="state"><br>
+    <label>Pincode:</label>
+    <input type="number" formControlName="pincode"><br>
+    </div>
+
+    <label>Type:</label>
+    <input type="radio" name="type" formControlName="type" value="dayScholar">
+    <label>Day scholar</label>
+    <input type="radio" name="type" formControlName="type" value="residential">
+    <label>Residential</label><br>
+    <div *ngIf="userForm.get('type')?.value=='dayScholar'">
+    <label>Bus Fee:</label>
+    <input type="number" formControlName="busFee"><br>
+    </div>
+    <div *ngIf="userForm.get('type')?.value=='residential'">
+            <label>Hostel Fee:</label>
+            <input type="number" formControlName="hostelFee"><br>
+    </div>
+    <label>Crads:</label>
+    <button (click)="addcard()" class="btn btn-warning">Add Card</button><br><br>
+
+    <div formArrayName="cards">
+        <div *ngFor="let card of cardsFormArray.controls; let i=index">
+            <div formGroupName="{{i}}">
+                <h2> card{{i+1}}</h2>
+                <label>Number:</label>
+                <input type="number" formControlName="number"><br>
+                <label>Expiry:</label>
+                <input type="month" formControlName="expiry"><br>
+                <label>CVV:</label>
+                <input type="number" formControlName="cvv"><br>
+                <button (click)="deletecard(i)" class="btn btn-danger"> Remove Card</button>
+            </div>
+        </div>
+    </div>
+    <button (click)="submit()">Submit</button>
+    
+</form>

@@ -26,6 +26,7 @@ import { MailComponent } from './mail/mail.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { StudentidcardComponent } from './studentidcard/studentidcard.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { StudentidcardComponent } from './studentidcard/studentidcard.component'
     MailComponent,
     CreateVehicleComponent,
     CreateAccountComponent,
+    CreateUserComponent,
   ],
   imports: [
     BrowserModule,
