@@ -1,1 +1,8 @@
-<p> Login works!</p>
+<!-- <button routerLink="/dashboard"> Click here to redirect to Dashboard</button> -->
+<form [formGroup]="loginForm">
+    <label>Email:</label>
+    <input type="email" formControlName="email"><br>
+    <label>password:</label>
+    <input type="password" formControlName="password"><br>
+    <button class="btn btn-primary" (click)="login()">Login</button>
+</form>

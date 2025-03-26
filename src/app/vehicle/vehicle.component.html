@@ -1,4 +1,4 @@
-<H2> Vehicle</H2>
+<H1> Vehicle</H1>
 
 
 <select [(ngModel)]="column">
@@ -39,8 +39,7 @@
         <th> Color</th>
         <th> Cost</th>
         <th> Fuel</th>
-        <th> View</th>
-        <th> Action</th>
+        <th colspan="3"> Action</th>
     </tr>
 </thead>
 <tbody>
@@ -53,6 +52,10 @@
         <td>
             <button routerLink="/dashboard/vehicle-details/{{vehicle.id}}" class="btn btn-primary">View</button>
         </td>
+        <td>
+            <button routerLink="/dashboard/edit-vehicle/{{vehicle.id}}" class="btn btn-warning">Edit</button>
+        </td>
+
         <td>
             <button (click)="delete(vehicle.id)" class="btn btn-danger">Delete</button>
         </td>

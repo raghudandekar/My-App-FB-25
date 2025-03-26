@@ -25,10 +25,11 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
 import { MailComponent } from './mail/mail.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
-import { StudentidcardComponent } from './studentidcard/studentidcard.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { VehicleDetailsclearComponent } from './vehicle-detailsclear/vehicle-detailsclear.component';
+import { CardComponent } from './card/card.component';
+import { CardDetailsComponent } from './card-details/card-details.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,8 @@ import { VehicleDetailsclearComponent } from './vehicle-detailsclear/vehicle-det
     CreateUserComponent,
     VehicleDetailsComponent,
     VehicleDetailsclearComponent,
+    CardComponent,
+    CardDetailsComponent,
   ],
   imports: [
     BrowserModule,

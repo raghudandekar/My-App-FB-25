@@ -21,15 +21,22 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
 import { MailComponent } from './mail/mail.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
-import { StudentidcardComponent } from './studentidcard/studentidcard.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { LoginService } from './login.service';
+import { AuthenticationGuard } from './authentication.guard';
+import { CardComponent } from './card/card.component';
+import { CardService } from './card.service';
+import { CardDetailsComponent } from './card-details/card-details.component';
+
+
 
 const routes: Routes = [
-  {path:'dashboard',component:DashboardComponent,children:[
+  {path:'login',component:LoginComponent},
+  {path:'dashboard',component:DashboardComponent,canActivate:[AuthenticationGuard],children:[
     {path:'home',component:HomeComponent},
     {path:'welcome',component:WelcomeComponent},
-    {path:'calcultor',component:CalcultorComponent},
+      {path:'calcultor',component:CalcultorComponent},
     {path:'databinding',component:DatabindingComponent},
     {path:'directives',component:DirectivesComponent},
     {path:'employee',component:EmployeeComponent},
@@ -45,9 +52,14 @@ const routes: Routes = [
         {path:'mail',component:MailComponent},
         {path:'create-vehicle',component:CreateVehicleComponent},
         {path:'create-account',component:CreateAccountComponent},
-        {path:'studentidcard',component:StudentidcardComponent},
         {path:'create-user',component:CreateUserComponent},
         {path:'vehicle-details/:id',component:VehicleDetailsComponent},  
+        {path:'edit-vehicle/:id',component:CreateVehicleComponent},  
+        {path:'loginservice',component:LoginService},  
+        {path:'card',component:CardComponent},
+        {path:'card-details/:id',component:CardDetailsComponent},
+
+
   ]}, 
      
  
