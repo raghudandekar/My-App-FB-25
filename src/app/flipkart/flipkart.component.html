@@ -1,8 +1,12 @@
 <h2>Flipkart</h2>
+
 <div class="product-catalog">
     <div class="product-grid">
       <div class="product-card" *ngFor="let flipkart of flipkarts">
         <img [src]="flipkart.image" [alt]="flipkart.name">
+        <div class="top">
+          <app-rating [rating]="flipkart.rating?.rate"></app-rating>
+        </div>
         <div class="product-info">
           <!-- <h3>{{ flipkart.id }}</h3> -->
           <p>{{ flipkart.name }}</p>

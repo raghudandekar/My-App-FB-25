@@ -30,6 +30,12 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 import { VehicleDetailsclearComponent } from './vehicle-detailsclear/vehicle-detailsclear.component';
 import { CardComponent } from './card/card.component';
 import { CardDetailsComponent } from './card-details/card-details.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingComponent } from './rating/rating.component';
+import { TextAreaComponent } from './text-area/text-area.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +65,12 @@ import { CardDetailsComponent } from './card-details/card-details.component';
     VehicleDetailsclearComponent,
     CardComponent,
     CardDetailsComponent,
+    Sibling1Component,
+    Sibling2Component,
+    ParentComponent,
+    ChildComponent,
+    RatingComponent,
+    TextAreaComponent,
   ],
   imports: [
     BrowserModule,

@@ -28,6 +28,8 @@ import { AuthenticationGuard } from './authentication.guard';
 import { CardComponent } from './card/card.component';
 import { CardService } from './card.service';
 import { CardDetailsComponent } from './card-details/card-details.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { ParentComponent } from './parent/parent.component';
 
 
 
@@ -58,6 +60,10 @@ const routes: Routes = [
         {path:'loginservice',component:LoginService},  
         {path:'card',component:CardComponent},
         {path:'card-details/:id',component:CardDetailsComponent},
+        {path:'sibling',component:Sibling1Component},
+        {path:'parent',component:ParentComponent},
+
+
 
 
   ]}, 
