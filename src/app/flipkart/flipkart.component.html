@@ -4,7 +4,7 @@
     <div class="product-grid">
       <div class="product-card" *ngFor="let flipkart of flipkarts">
         <img [src]="flipkart.image" [alt]="flipkart.name">
-        <div class="top">
+        <div class="rating">
           <app-rating [rating]="flipkart.rating?.rate"></app-rating>
         </div>
         <div class="product-info">

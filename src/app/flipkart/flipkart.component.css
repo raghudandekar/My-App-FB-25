@@ -18,11 +18,12 @@
 
   }
   .product-card img {
-    max-width: 250px;
-    height: 200px;
+    max-width: 150px;
+    height: auto;
   }
   
   .prouduct-info {
     margin-top: 10px;
   }
+
 
