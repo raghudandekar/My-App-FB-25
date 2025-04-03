@@ -36,6 +36,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { RatingComponent } from './rating/rating.component';
 import { TextAreaComponent } from './text-area/text-area.component';
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +72,7 @@ import { TextAreaComponent } from './text-area/text-area.component';
     ChildComponent,
     RatingComponent,
     TextAreaComponent,
+    LifeCycleHooksComponent,
   ],
   imports: [
     BrowserModule,
